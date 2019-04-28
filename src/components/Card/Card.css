@@ -1,0 +1,15 @@
+.card-body {
+    height: 300px;
+    width: 300px;
+    margin: 25px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card {
+    width: 350px;
+    height: 350px;
+    margin: 15px 45px;
+    box-shadow: 0 3px 6px #999, 0 3px 6px #999;
+    border: 3px solid white;
+  }
