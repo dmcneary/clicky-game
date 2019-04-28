@@ -5,10 +5,12 @@
   
   .itemLeft {
     width: 15%;
+    float: left;
   }
   
   .itemCenter {
       width: 70%;
+      float: left;
   }
   
   .itemRight {
