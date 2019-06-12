@@ -11,7 +11,7 @@ Click on a cyclist to start. The cards will then randomly re-sort themselves, an
 ![screenshot](./screen.PNG)
 
 #### Installation
-(not: this will install a development build on your local machine)
+(note: this will install a development build on your local machine)
 1. Clone this Git repository to any directory
 2. From your terminal, navigate to the directory above & type
     cd clicky-game
