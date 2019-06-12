@@ -1,15 +1,23 @@
 .card-body {
-    height: 300px;
-    width: 300px;
-    margin: 25px;
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    margin-top: 20px;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
+.card-body:hover {
+    border: 4px rgb(99, 99, 99) solid;
+    border-radius: 2px;
+    box-shadow: 4px 4px 10px rgb(56, 56, 56);
+    transition: all .2s ease-in-out;
+}
+
 .card {
-    width: 350px;
-    height: 350px;
+    width: 250px;
+    height: 250px;
+    background-color: #444;
     margin: 15px 45px;
-    box-shadow: 0 3px 6px #999, 0 3px 6px #999;
-    border: 3px solid white;
+    border: 3px solid black;
   }

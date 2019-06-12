@@ -10,10 +10,10 @@ const Navbar = props => (
                     <h3>Greats</h3>
                 </li>
                 <li className="itemCenter">
-                    <span class="score">Your Score:{ props.score } | Top score: { props.topScore }</span>
+                    <span className="score">Your Score:{ props.score } | Top score: { props.topScore }</span>
                 </li>
                 <li className="itemRight">
-                    <span class="status">{ props.status }</span>
+                    <span className="status">{ props.status }</span>
                 </li>
             </ul>
         </div>

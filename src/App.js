@@ -24,18 +24,29 @@ class App extends React.Component {
       arrangement.push(charList[randomizer])
       }
     }
-    return arrangement.map(char => <Card key={char.key} name={char.name} image={char.image} onClick={this.handleClick} />);
+    return arrangement.map(char => { 
+      return(
+        <Card 
+          key={ char.key }
+          id={ char.key }
+          name={ char.name }
+          image={ char.image }
+          message={ char.message }
+          onClick={ this.handleClick } />
+      )}
+    );
   }
 
-  handleClick = (char) => {
+  handleClick = (charName, charMsg) => {
     this.handleCardGeneration();
-
-    if (this.state.chosenChars.indexOf(char) === -1) {
+    if (this.state.chosenChars.indexOf(charName) === -1) {
       this.setState(
         {
-        chosenChars: [...this.state.chosenChars, char],
+        chosenChars: [...this.state.chosenChars, charName],
         score: this.state.score + 1,
-        status: "Good!"
+        status: "Good!",
+        cyclistName: charName,
+        message: charMsg
         }
       )
     } else {
@@ -53,7 +64,8 @@ class App extends React.Component {
       this.setState({
         status: "You already clicked that one! Try again?",
         score: 0,
-        chosenChars: []
+        chosenChars: [],
+        message: "OOPS!"
       })
 
     }
@@ -63,10 +75,10 @@ class App extends React.Component {
     return(
     <div className="container-fluid">
       <Navbar score={ this.state.score } status={ this.state.status } topScore={ this.state.topScore }/>
-      <div class="wrapper">
-        {this.handleCardGeneration()}
+      <Jumbotron cyclistName={ this.state.cyclistName } message={ this.state.message }/>
+      <div className="wrapper">
+        { this.handleCardGeneration() }
       </div>
-      <Jumbotron cyclistName={ this.cyclistName } message={ this.message }/>
       <footer>by David McNeary</footer>
     </div>)
 }
