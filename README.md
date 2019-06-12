@@ -14,6 +14,8 @@ Click on a cyclist to start. The cards will then randomly re-sort themselves, an
 (note: this will install a development build on your local machine)
 1. Clone this Git repository to any directory
 2. From your terminal, navigate to the directory above & type  
-    cd clicky-game
-    npm install
-    npm start
+    ```
+    cd clicky-game  
+    npm install  
+    npm start  
+    ```
