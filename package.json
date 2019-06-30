@@ -1,7 +1,7 @@
 {
   "name": "clicky-game",
   "version": "0.1.0",
-  "homepage": "https://dmcneary.github.io/clicky-game",
+  "homepage": "https://dmcneary.github.io/12-cycling-greats/",
   "private": true,
   "dependencies": {
     "gh-pages": "^2.0.1",
